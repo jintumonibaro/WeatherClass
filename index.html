@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+      <h1>Weather Forecast</h1>
+      <button class="login-btn" id="loginBtn">Login</button>
+    </header>
+
+   
+    <section class="search-section">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Enter city name">
+        <button id="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <section class="current-weather">
+      <div class="weather-card">
+        <div class="location">
+          <h2 id="cityName">Guwahati, Assam, India</h2>
+          <p id="currentDate">Loading date...</p>
+        </div>
+        <div class="weather-info">
+          <div class="temperature">
+            <span id="tempValue">28</span>
+            <span class="unit">°C</span>
+          </div>
+          <div class="weather-details">
+            <div class="weather-icon">
+              <img id="weatherIcon" src="https://cdn-icons-png.flaticon.com/512/6974/6974833.png" alt="Weather Icon">
+            </div>
+            <div class="description">
+              <p id="weatherDesc">Sunny</p>
+              <p>Humidity: <span id="humidity">65</span>%</p>
+              <p>Wind: <span id="windSpeed">12</span> km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div class="forecast-container">
+        <div class="forecast-day">
+          <p class="day">Mon</p>
+          <img src="https://cdn-icons-png.flaticon.com/512/6974/6974833.png" alt="Weather">
+          <p class="forecast-temp">30°C</p>
+        </div>
+        <div class="forecast-day">
+          <p class="day">Tue</p>
+          <img src="https://cdn-icons-png.flaticon.com/512/3351/3351979.png" alt="Weather">
+          <p class="forecast-temp">27°C</p>
+        </div>
+        <div class="forecast-day">
+          <p class="day">Wed</p>
+          <img src="https://cdn-icons-png.flaticon.com/512/3351/3351979.png" alt="Weather">
+          <p class="forecast-temp">26°C</p>
+        </div>
+        <div class="forecast-day">
+          <p class="day">Thu</p>
+          <img src="https://cdn-icons-png.flaticon.com/512/6974/6974833.png" alt="Weather">
+          <p class="forecast-temp">29°C</p>
+        </div>
+        <div class="forecast-day">
+          <p class="day">Fri</p>
+          <img src="https://cdn-icons-png.flaticon.com/512/6974/6974833.png" alt="Weather">
+          <p class="forecast-temp">31°C</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h3>Weather Information</h3>
+      <div class="video-container">
+        <div class="video-item">
+          <iframe class="videoplay" src="https://www.youtube.com/embed/NNrr46LAzU4" title="Weather Video 1" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <iframe class="videoplay" src="https://www.youtube.com/embed/jJXwQXmosd4" title="Weather Video 2" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    
+    <div id="loginPopup" class="login-popup">
+      <div class="login-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+          </div>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
